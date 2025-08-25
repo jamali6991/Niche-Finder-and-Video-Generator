@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.alert {
+    display: none; /* Initially hide the output areas */
+}
+
+.alert.show {
+    display: block; /* Show when content is generated */
+}

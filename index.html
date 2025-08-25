@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niche Finder and Video Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Niche Finder and Video Generator</h1>
+        <p>Automate your YouTube Shorts creation process!</p>
+    </header>
+    <main class="container mt-5">
+        <section id="niche-finder" class="mb-4">
+            <h2 class="text-center">Find Your Niche</h2>
+            <div class="input-group mb-3">
+                <input type="text" id="niche-input" class="form-control" placeholder="Enter your interests...">
+                <div class="input-group-append">
+                    <button class="btn btn-success" onclick="generateNiche()">Generate Niche</button>
+                </div>
+            </div>
+            <div id="niche-output" class="alert alert-info" role="alert"></div>
+        </section>
+        <section id="prompt-generator" class="mb-4">
+            <h2 class="text-center">Generate Video Prompt</h2>
+            <div class="input-group mb-3">
+                <input type="text" id="prompt-input" class="form-control" placeholder="Enter selected niche...">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" onclick="generatePrompt()">Generate Prompt</button>
+                </div>
+            </div>
+            <div id="prompt-output" class="alert alert-info" role="alert"></div>
+        </section>
+        <section id="metadata-generator" class="mb-4">
+            <h2 class="text-center">Generate YouTube Metadata</h2>
+            <div class="input-group mb-3">
+                <input type="text" id="metadata-input" class="form-control" placeholder="Enter video content...">
+                <div class="input-group-append">
+                    <button class="btn btn-warning" onclick="generateMetadata()">Generate Metadata</button>
+                </div>
+            </div>
+            <div id="metadata-output" class="alert alert-info" role="alert"></div>
+        </section>
+    </main>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2023 Niche Finder and Video Generator</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
